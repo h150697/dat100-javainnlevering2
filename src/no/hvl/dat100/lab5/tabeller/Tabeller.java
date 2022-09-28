@@ -38,7 +38,7 @@ public class Tabeller {
 		if(tabell[t] == tall) {
 			return t;
 		
-		}
+			}
 		
 		}
 		return -1;
@@ -47,8 +47,7 @@ public class Tabeller {
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("reverser ikke implementert");
+		
 		
 	}
 
