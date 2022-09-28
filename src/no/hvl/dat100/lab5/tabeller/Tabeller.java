@@ -1,5 +1,7 @@
 package no.hvl.dat100.lab5.tabeller;
 
+import java.util.Arrays;
+
 public class Tabeller {
 
 	// a)
@@ -48,16 +50,36 @@ public class Tabeller {
 	}
 
 	// g)
-	public static boolean erSortert(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("erSortert ikke implementert");
+	public static boolean erSortert(int[] tabell) { 
+		for(int i = 0; i < tabell.length - 1; i++) {
+			if(tabell[i] > tabell[i+1])
+				return false;
+		
+		}
+		return true;
+		
 	}
+	
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
-
-		// TODO
-		throw new UnsupportedOperationException("settSammen ikke implementert");
+		
+		
+		int lengde = tabell1.length + tabell2.length;
+		
+		int[] result = new int[lengde];
+		int pos = 0;
+		for (int element : tabell1) {
+			result[pos] = element;
+			pos++;
 	}
+		
+		for(int element : tabell2) {
+			result[pos] = element;
+			pos++;
+		}
+			return result;
+
+	}
+	
 }
