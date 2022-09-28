@@ -34,9 +34,14 @@ public class Tabeller {
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
-
+		for (int t = 0; t < tabell.length; t++) {
+		if(tabell[t] == tall) {
+			return t;
 		
+		}
 		
+		}
+		return -1;
 	}
 
 	// f)
