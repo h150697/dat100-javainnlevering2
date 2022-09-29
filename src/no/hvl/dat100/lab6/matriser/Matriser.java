@@ -27,9 +27,34 @@ public class Matriser {
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
-
-		// TODO
-		throw new UnsupportedOperationException("erLik ikke implementert");
+		boolean erLik = true;
+		
+		int row1 = a.length;
+		int col1 = a[0].length;
+		
+		int row2 = b.length;
+		int col2 = b[0].length;
+		
+			if(row1 != row2 || col1 != col2) {
+				erLik = false;
+			}
+			else {
+				for(int i = 0; i < row1; i++) {
+					for(int j = 0; j < col1; j++) {
+						if(a[i][j] != b[i][j]) {
+							erLik = false;
+						}
+					}
+				}
+				
+			if(erLik)
+				return true;
+			else
+				return false;
+			}
+		
+		return erLik;
+		
 	}
 	
 	// e)
