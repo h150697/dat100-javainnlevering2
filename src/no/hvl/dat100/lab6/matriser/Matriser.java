@@ -30,10 +30,25 @@ public class Matriser {
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("skaler ikke implementert");
-	
+		int k = 0;
+		int[][] matriseto = new int[matrise.length][];
+
+		for (int[] tabell : matrise) {
+			matriseto[k] = tabell;
+			k++;
+		}
+		for (int i = 0; i < matrise.length; i++) {
+			for (int j = 0; j < matrise[i].length; j++) {
+
+				matriseto[i][j] = matrise[i][j] * tall;
+			}
+
+		}
+		return matriseto;
+
 	}
+		
+		
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {

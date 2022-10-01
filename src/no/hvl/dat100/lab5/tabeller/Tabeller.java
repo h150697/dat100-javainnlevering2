@@ -18,37 +18,37 @@ public class Tabeller {
 		
 	}
 
-	// c)
+	// c) ENDTA MTP METODENANVN
 	public static int summer(int[] tabell) {
 
 		int sum = 0;
         for(int i=0; i<tabell.length; i++) {
-            sum += tabell[i];
+        	int t = tabell[i];
+            sum += t;
         }
-        return sum;
-    }
+        System.out.println(sum);
+    
 
-	//Summere med while løkke
-	
-	public static int summerTo(int[] tabell) {
-	int sum = 0;
-	int j = 0;
-	while ( j <tabell.length ) {
-		sum += tabell [j];
-		j++;
+	//While løkke
+	sum = 0;
+	int i = 0;
+	while ( i <tabell.length ) {
+		int t = tabell [i];
+		sum += t;
+		i++;
 	}
+	System.out.println(sum);
+
 	
-	return sum;
-}
 	
 	//Utvida for-løkke
-	public static int summerUtvida(int[] tabell) {
-	int sum = 0;
+	sum = 0;
 	for ( int tabellSum : tabell ) {
 		sum += tabellSum;
 	}
 	return sum;
 }
+	
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
 
@@ -60,7 +60,6 @@ public class Tabeller {
 		return false;
 
 }
-
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
