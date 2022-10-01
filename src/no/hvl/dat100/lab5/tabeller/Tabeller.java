@@ -18,7 +18,7 @@ public class Tabeller {
 		
 	}
 
-	// c) ENDTA MTP METODENANVN
+	// c) 
 	public static int summer(int[] tabell) {
 
 		int sum = 0;
