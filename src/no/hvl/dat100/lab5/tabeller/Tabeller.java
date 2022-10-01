@@ -1,7 +1,5 @@
 package no.hvl.dat100.lab5.tabeller;
 
-import java.util.Arrays;
-
 public class Tabeller {
 
 	// a)
@@ -44,7 +42,6 @@ public class Tabeller {
 }
 	
 	//Utvida for-løkke
-	// når programmet må prossesere kvart element
 	public static int summerUtvida(int[] tabell) {
 	int sum = 0;
 	for ( int tabellSum : tabell ) {
