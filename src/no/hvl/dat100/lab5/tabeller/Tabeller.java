@@ -5,18 +5,28 @@ public class Tabeller {
 	// a)
 	public static void skrivUt(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
-
-	}
+		System.out.print("[");
+        for (int i = 0; i<tabell.length; i++) {
+            System.out.print(tabell[i]);
+        }
+            System.out.print("]");
+    }
 
 	// b)
 	public static String tilStreng(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
-		
-	}
+		String txt = "[";
+        for (int i = 0; i<tabell.length; i++) {
+            if (i<tabell.length-1) {
+            txt += tabell[i] + ",";
+            } else {
+                txt += tabell[i];
+            }
+        }
+        txt += "]";
+        return txt;
+
+}
 
 	// c) 
 	public static int summer(int[] tabell) {
@@ -29,7 +39,7 @@ public class Tabeller {
         System.out.println(sum);
     
 
-	//While løkke
+	
 	sum = 0;
 	int i = 0;
 	while ( i <tabell.length ) {
@@ -41,7 +51,7 @@ public class Tabeller {
 
 	
 	
-	//Utvida for-løkke
+	
 	sum = 0;
 	for ( int tabellSum : tabell ) {
 		sum += tabellSum;
@@ -75,10 +85,13 @@ public class Tabeller {
 
 	// f)
 	public static int[] reverser(int[] tabell) {
+		 int[] reverser = new int[tabell.length];
 
-		
-		
-	}
+	        for(int i = tabell.length -1; i>= 0; i--) {
+	            reverser[(tabell.length-1)-i] = tabell[i];
+	        }
+	        return reverser;
+	    }
 
 	// g)
 	public static boolean erSortert(int[] tabell) { 
